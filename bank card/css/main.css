@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #f6f6f6;
+  background-size: 300% 300%;
+  color: rgb(80, 80, 80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+@keyframes circle1 {
+  30% {
+    top: 50%;
+  }
+  60% {
+    left: 50%;
+  }
+  100% {
+    top: 40%;
+  }
+}
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgb(255, 212, 35);
+  background: linear-gradient(90deg, rgb(255, 212, 35) 0%, rgb(22, 194, 254) 100%);
+  border-radius: 50%;
+  left: 40%;
+  top: 40%;
+  z-index: -1;
+  animation: circle1 3s linear infinite;
+}
+
+@keyframes circle3 {
+  30% {
+    bottom: 50%;
+  }
+  30% {
+    left: 50%;
+  }
+  60% {
+    left: 38%;
+  }
+  100% {
+    bottom: 40%;
+  }
+}
+.circle3 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgb(255, 57, 35);
+  background: linear-gradient(90deg, rgb(188, 96, 65) 0%, rgb(189, 21, 172) 100%);
+  border-radius: 50%;
+  bottom: 35%;
+  left: 38%;
+  z-index: -1;
+  animation: circle3 5s linear infinite;
+}
+
+@keyframes circle2 {
+  30% {
+    right: 50%;
+  }
+  60% {
+    bottom: 45%;
+  }
+  100% {
+    right: 36%;
+  }
+}
+.secondCircle {
+  position: absolute;
+  right: 36%;
+  bottom: 35%;
+  background: rgb(49, 35, 255);
+  background: linear-gradient(90deg, rgb(49, 35, 255) 0%, rgb(251, 22, 254) 100%);
+  width: 150px;
+  height: 150px;
+  z-index: -2;
+  border-radius: 50%;
+  animation: circle2 4s linear infinite;
+}
+
+.circle4 {
+  position: absolute;
+  right: 25%;
+  bottom: 35%;
+  background: rgba(214, 214, 214, 0.626);
+  background: linear-gradient(90deg, rgb(209, 155, 28) 0%, rgb(255, 25, 25) 100%);
+  width: 400px;
+  height: 400px;
+  z-index: -4;
+  border-radius: 50%;
+}
+
+.circle5 {
+  position: absolute;
+  left: 25%;
+  top: 35%;
+  background: rgba(214, 214, 214, 0.626);
+  background: linear-gradient(90deg, rgb(225, 13, 77) 0%, rgba(214, 214, 214, 0.626) 100%);
+  width: 300px;
+  height: 300px;
+  z-index: -4;
+  border-radius: 50%;
+}
+
+.card {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.6710259104) 0%, rgba(255, 255, 255, 0.1085609244) 100%);
+  border: 2px solid hsla(0, 0%, 100%, 0.3);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  width: 400px;
+  height: 250px;
+  border-radius: 20px;
+  padding: 2rem;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  overflow: hidden;
+}
+.card .cheep {
+  width: 50px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.card .cheep .line {
+  background: rgb(80, 80, 80);
+  height: 24%;
+}
+.card .cheep .line:nth-last-of-type(2), .card .cheep .line:nth-last-of-type(3), .card .cheep .line:nth-last-of-type(4), .card .cheep .line:nth-last-of-type(5) {
+  margin-top: 1px;
+}
+.card .cheep .number {
+  font-family: monospace;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+.card .cheep .dates-and-logo {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.3rem;
+}
+
+.number {
+  font-family: monospace;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.dates-and-logo {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.3rem;
+}/*# sourceMappingURL=main.css.map */
